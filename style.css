@@ -1,0 +1,147 @@
+@import url(https://fonts.google.com/specimen/Young+Serif);
+@import url(https://fonts.google.com/specimen/Outfit);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Young Serif','Outfit';
+}
+body{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(32, 66%, 89%);
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: hsl(0, 0%, 100%);
+}
+.img-card img{
+    width: 100%;
+    height: 200px;
+}
+.heading{
+    padding: 1.9rem;
+    margin: 0 auto;
+}
+.heading h2{
+    padding: 1rem 0;
+    font-size: 2.5em;
+}
+.heading p{
+    font-size: 18px;
+    text-align: justify;
+    color: hsl(60, 1%, 32%);
+}
+.prep-time{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 230px;
+    border-radius: 0.7rem;
+    margin: 0 auto;
+    background-color: hsl(331, 84%, 98%);
+}
+.prep-time h4{
+    font-weight: bold;
+    font-size: 1.3em;
+    margin: 1.3rem;
+    color: hsl(332, 51%, 32%);
+}
+.prep-time ul{
+    padding-left: 3.5rem;
+    font-size: 18px;
+}
+.one{
+    padding: 0.4rem;
+    color: hsl(24, 5%, 18%);
+}
+.one::marker{
+     color: hsl(332, 51%, 32%);
+}
+.ingredient, .rules, .nutrition{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    margin: 2.5rem;
+}
+.ingredient h3, .rules h3, .nutrition h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: hsl(14, 45%, 36%);
+}
+.two, .three{
+    margin-left: 2rem;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 1.1rem;
+    color: hsl(24, 5%, 18%);
+}
+.two::marker, .three::marker{
+    color: hsl(14, 45%, 36%);
+}
+hr{
+    width: 85%;
+    border: none;
+    height: 1px;
+    background-color: hsl(30, 18%, 87%);
+    margin: 0 auto;
+}
+.nutrition table{
+    margin-top: 1rem;
+    text-align: center;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse; 
+    /* text-align: justify;*/
+}
+table tr{
+    height: 1.8rem;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+/* .nutrition tr {
+} */
+
+@media screen and (min-width:700px) {
+
+    .container{
+        width: 60%;
+        margin: 5rem auto;
+        height: auto;
+        padding: 2rem;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%);
+    }
+    .img-card img{
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+    }
+    
+}
+@media screen and (min-width:1650px) {
+
+    .container{
+        width: 30%;
+    }
+    
+}
+@media screen and (min-width:1150px) {
+
+    .container{
+        width: 40%;
+        margin: 5rem auto;
+        height: auto;
+        padding: 2rem;
+        border-radius: 10px;
+    }
+    .img-card img{
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+    }
+    
+}
